@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    margin-top: 0;
+    background-color: #1d3b6c;
+    text-align: center;
+    
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 15px;
+    padding: 7px;
+}
+
+#fantasy-team {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+#headInCard{
+    color: #144e8d;
+}
+
+.team-card {
+    background-color: #fff;
+    width: 18%;
+    padding: 20px;
+    text-align: center;
+     margin: 10px; 
+    border-radius: 10px;
+    
+    position: flex;
+    flex-direction: column;
+}
+
+
+ th{
+    background-color: red !important;
+ }
+ #hId{
+    text-align: center;
+    margin-bottom: 20px;
+    text-emphasis-color:  #1d3b6c;
+ }
+
+#player-search {
+    margin-top: 40px;
+}
+.searchTable{
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+
+#search-form label, #search-form select, #search-form input {
+    margin: 10px;
+    font-size: 14px;
+}
+input{
+    width: 300px;
+}
+#search-form button {
+    background-color: #1d3b6c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#search-form button:hover {
+    background-color: #144e8d;
+}
+
+#results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#results-table th, #results-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#results-table th {
+    background-color: #1d3b6c;
+    color: white;
+}
+/* כפתור ההוספה */
+#results-table td button {
+    background-color: #1d3b6c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#results-table td button:hover {
+    background-color: #144e8d;
+}

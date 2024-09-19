@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Fantasy 2014-2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NBA Fantasy 2014-2024</h1>
+    </header>
+
+    <!-- הסקשן העליון בעמוד -->
+    <section id="fantasy-team">
+        <h2 id="hId">My Fantasy Team</h2>
+        <div id="team-container">
+            <div class="team-card" id="pg"><h3 id="headInCard">Point Guard</h3></div>
+            <div class="team-card" id="sg"><h3 id="headInCard">Shooting Guard</h3></div>
+            <div class="team-card" id="sf"><h3 id="headInCard">Small Forward</h3></div>
+            <div class="team-card" id="pf"><h3 id="headInCard">Power Forward</h3></div>
+            <div class="team-card" id="c"><h3 id="headInCard">Center</h3></div>
+        </div>
+    </section>
+
+    <div class="searchTable">
+
+    <section id="player-search">
+        <h2 id="hId">NBA Player Search</h2>
+        <div class="searchDesain">
+            <form id="search-form">
+                <select id="position" name="position">
+                    <option value="PG">PG</option>
+                    <option value="SG">SG</option>
+                    <option value="SF">SF</option>
+                    <option value="PF">PF</option>
+                    <option value="C">C</option>
+                </select>
+
+                 
+                <input type="range" id="points" name="points" min="0" max="20000" range="" value="0">
+                <span id="pointsValue">0</span>
+                <input type="range" id="twoPercent" name="twoPercent" min="0" max="100" value="0">
+                <span id="twoPercenttt">0</span>
+
+                <input type="range" id="threePercent" name="threePercent" min="0" max="100" value="0">
+                <span id="threePercenttt">0</span>
+
+                <button type="submit">Search Player</button>
+            </form>
+
+            <!-- טבלת השחקנים -->
+             <div>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Points</th>
+                        <th>2%</th>
+                        <th>3%</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body">
+                    <!-- פה יהיה הרנדור של השחקנים -->
+                </tbody>
+            </table>
+        </div>
+        <!-- </div> -->
+    </section>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
